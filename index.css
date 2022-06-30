@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0
+}
+
+:root {
+    /*Colors*/
+    --first-section-background-color: #2a1361;
+    --navbar-button-background-color: #055f8a;
+    --navbar-button-text-color: white;
+
+    /* NavBar Dimensions */
+    --navbar-height: 3rem;
+}
+
+.first-section {
+    height: 100vh;
+    background: linear-gradient(to right, #211152, #3b197d);
+    overflow: hidden;
+}
+
+.header-container {
+    height: var(--navbar-height);
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.navbar {
+    display: inline-block;
+    height: 100%;
+}
+
+.navbar-button {
+    font-size: 15px;
+    background: none;
+    height: 20px;
+    padding: 0 10px;
+    margin: 0.75rem 1rem;
+}
+
+.navbar-button:hover {
+    background-color: var(--navbar-button-background-color);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.navbar-button a:any-link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.main-container {
+    height: 100vh;
+    position: relative;
+}
+
+.wave {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+}
+
+.second-section {
+    background-color: #f3f4f5;
+    height: 100vh;
+}
+
+p {
+    padding-top: 200px;
+    font-size: 40px;
+    font-family: cursive;
+    text-align: center;
+}
