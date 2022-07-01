@@ -35,15 +35,31 @@
     overflow: hidden;
 }
 
+
+/* Header */
 .header-container {
     height: var(--navbar-height);
     text-align: center;
     padding-top: 2rem;
 }
 
+/* NavBar */
 .navbar {
     display: inline-block;
     height: 100%;
+}
+
+.navbar-logo {
+    display: inline-block;
+    height: 100%;
+    width: 50px;
+    position: absolute;
+    left: 8rem;
+}
+
+.navbar-logo img {
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .navbar-button {
@@ -54,6 +70,12 @@
     margin: 0.75rem 1rem;
 }
 
+.navbar-button.active {
+    background-color: var(--navbar-button-background-color);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
 .navbar-button:hover {
     background-color: var(--navbar-button-background-color);
     border-radius: 15px;
@@ -61,30 +83,24 @@
 }
 
 .navbar-button a:any-link {
+    font-family: 'Hermit-Regular';
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
+/* Main Content */
 .main-container {
     height: 100vh;
     position: relative;
 }
 
-.wave-container {
-    width: 100%;
-    position: absolute;
-    bottom: 78px;
-}
 
-.second-section {
-    background-color: #525252;
-    height: 100vh;
-}
-
+/* Title Content */
 .title-container {
     position: absolute;
     top: 10rem;
     left: 7rem;
+    z-index: 4;
 }
 
 .title {
@@ -93,45 +109,82 @@
     font-size: 5vw;
 }
 
-.tilt-effect {
-    display: inline;
+/* Background Elements */
+.background-elements {
+    width: 100vw;
+    height: 100vh;
 }
 
-.computer-container {
-    display: inline-block;
+/* Computer Container */
+.background-elements .computer-container {
     position: absolute;
-    top: 3rem;
-    right: 73rem;
-    transform: scale(1.8);
-}
-
-.computer-container object {
-    position: absolute;
-    top: 55px;
-}
-
-.computer-container .computer {
-    z-index: 2;
-}
-
-.computer-container .computer:hover {
-    animation: computer-float 600ms ease-in-out alternate infinite;
-}
-
-.computer-container .computer-floor {
+    width: 40rem;
+    height: 40rem;
+    top: 94px;
+    right: 78px;
     z-index: 1;
+}
+
+.background-elements .computer-container .float {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.background-elements .computer-container .float:hover {
+    position: absolute;
+    animation: float 600ms ease-in-out alternate infinite;
+}
+
+.background-elements .computer-container .avatar-1 {
+    position: absolute;
+    top: -20px;
+    left: 56px;
+    z-index: 1;
+    transform: scale(0.7);
+}
+
+.background-elements .computer-container .computer {
+    z-index: 0;
+}
+
+.background-elements .computer-container .computer-floor {
+    z-index: 0;
     opacity: 80%;
 }
 
-.computer-container .lines {
-    position: absolute;
+/* Lines Container */
+.lines-container {
     z-index: 0;
-    top: 15px;
-    left: -482px;
 }
 
-.computer-container .lines.bright {
-    top: -24px;
+.background-elements .lines-container object {
+    right: 0;
+    position: absolute;
+}
+
+.background-elements .lines-container object:last-child {
+    right: 0;
+    position: absolute;
+    right: -36px;
+    top: -8px;
+}
+
+.background-elements .lines-container .line-bright.bright {
+    animation: opening 10s;
+}
+
+/* Second Section */
+.wave-container {
+    width: 100%;
+    position: absolute;
+    bottom: 70px;
+}
+
+.second-section {
+    background-color: #525252;
+    height: 100vh;
 }
 
 @media screen and (max-width: 1125px) {
@@ -150,13 +203,38 @@
     }
 }
 
-@keyframes computer-float {
+@keyframes float {
     from {
-        top: 55px;
+        top: 0px;
     }
 
     to {
-        top: 30px;
+        top: -25px;
+    }
+
+}
+
+@keyframes fade-in-opacity {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes opening {
+    0% {
+        clip-path: circle(0%);
+    }
+
+    99% {
+        clip-path: circle(150%);
+    }
+
+    100% {
+        clip-path: none;
     }
 
 }
