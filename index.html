@@ -1,4 +1,5 @@
-<html lang="pt_BR">
+<!DOCTYPE html>
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
@@ -13,22 +14,25 @@
     <main>
         <section class="first-section">
             <header class="header-container">
+                <div class="navbar-logo">
+                    <img src="/media/images/logo.png" alt="logo">
+                </div>
                 <nav class="navbar">
                     <div class="navbar-buttons">
-                        <button class="navbar-button">
-                            <a class="navbar-button-link" href="/">Home</a>
+                        <button class="navbar-button active">
+                            <a class="navbar-button-link" href="/index.html">Home</a>
                         </button>
                         <button class="navbar-button">
-                            <a class="navbar-button-link" href="/">Sobre</a>
+                            <a class="navbar-button-link" href="/index.html">Sobre</a>
                         </button>
                         <button class="navbar-button">
-                            <a class="navbar-button-link" href="/">Serviços</a>
+                            <a class="navbar-button-link" href="/index.html">Serviços</a>
                         </button>
                         <button class="navbar-button">
-                            <a class="navbar-button-link" href="/">Portifólio</a>
+                            <a class="navbar-button-link" href="/index.html">Portifólio</a>
                         </button>
                         <button class="navbar-button">
-                            <a class="navbar-button-link" href="/">Contato</a>
+                            <a class="navbar-button-link" href="/index.html">Contato</a>
                         </button>
                     </div>
                 </nav>
@@ -39,19 +43,21 @@
                         &lt;<span class="auto-type"></span>&gt;
                     </h1>
                 </div>
-                <div class="computer-container">
-                    <object class="computer" data="/media/svg/computer.svg"></object>
-                    <object class="computer-floor" data="/media/svg/computer-floor.svg"></object>
-                    <object class="lines" data="/media/svg/lines-clean.svg"></object>
-                    <object class="lines bright" data="/media/svg/lines-bright.svg"></object>
+                <div class="background-elements">
+                    <div class="computer-container">
+                        <div class="float">
+                            <object class="avatar-1" data="/media/svg/avatar-1.svg"></object>
+                            <object class="computer" data="/media/svg/computer.svg"></object>
+                        </div>
+                        <object class="computer-floor" data="/media/svg/computer-floor.svg"></object>
+                    </div>
+                    <div class="lines-container">
+                        <object class="line-clean" data="/media/svg/lines-clean.svg"></object>
+                        <object class="line-bright bright" data="/media/svg/lines-bright.svg"></object>
+                    </div>
                 </div>
                 <div class="wave-container">
                     <object class="wave" data="/media/svg/wave.svg"></object>
-                    <!-- <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                        <path fill="#f3f4f5" fill-opacity="1"
-                            d="M0,224L80,202.7C160,181,320,139,480,138.7C640,139,800,181,960,192C1120,203,1280,181,1360,170.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-                        </path>
-                    </svg> -->
                 </div>
             </div>
         </section>
@@ -68,7 +74,6 @@
             loop: false
         });
     </script>
-    <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
 </body>
 
 </html>
