@@ -141,7 +141,7 @@
 .line-static {
     position: relative;
     display: inline-block;
-    width: 10em;
+    width: 35%;
     height: 0.5em;
     background: var(--navbar-button-background-color);
     margin-bottom: 2rem;
