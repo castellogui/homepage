@@ -29,10 +29,30 @@
     --navbar-height: 3rem;
 }
 
+body {
+    overflow: overlay;
+}
+
 .first-section {
     height: 100vh;
     background: linear-gradient(to right, #211152, #3b197d);
     overflow: hidden;
+}
+
+/* ScrollBar */
+::-webkit-scrollbar {
+    width: 10px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4f3f7a;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-corner {
+    border-radius: 10px;
+    background: #4f3f7a;
 }
 
 
