@@ -22,8 +22,8 @@
 :root {
     /*Colors*/
     --first-section-background-color: #352575;
-    --navbar-button-background-color: #42e8e0;
-    --navbar-button-text-color: white;
+    --navbar-button-background-color: #44f5e7;
+    --white-color: #f3f4f5;
 
     /* NavBar Dimensions */
     --navbar-height: 3rem;
@@ -92,7 +92,7 @@
 .navbar-button a:any-link {
     font-family: 'Hermit-Regular';
     font-size: 18px;
-    color: rgb(255, 255, 255);
+    color: var(--white-color);
     text-decoration: none;
 }
 
@@ -106,18 +106,21 @@
     position: relative;
 }
 
+.text-container {
+    position: relative;
+    z-index: 1;
+}
 
 /* Title Content */
 .text-container .title-container {
     position: absolute;
     top: 10rem;
     left: 7rem;
-    z-index: 4;
 }
 
 .text-container .text-presentation {
     position: absolute;
-    top: 18rem;
+    top: 21rem;
     left: 7rem;
     visibility: hidden;
     animation: appear 500ms ease-in-out forwards;
@@ -125,25 +128,38 @@
 }
 
 .text {
-    color: #f3f4f5;
+    color: var(--white-color);
     font-family: 'Hermit-Regular';
     font-size: 2vw;
 }
 
 .text-container .text-presentation h2:last-child {
-    background: linear-gradient(to right, #7300c0, #53008a);
+    text-align: justify;
+    font-size: 1.3vw;
+}
+
+.line-static {
+    position: relative;
+    display: inline-block;
+    width: 10em;
+    height: 0.5em;
+    background: var(--navbar-button-background-color);
+    margin-bottom: 2rem;
 }
 
 .title {
-    color: white;
+    color: var(--white-color);
     font-family: 'Hermit-Bold';
     font-size: 5vw;
+    opacity: 20%;
 }
 
 /* Background Elements */
 .background-elements {
+    position: static;
     width: 100vw;
     height: 100vh;
+    z-index: 0;
 }
 
 /* Computer Container */
@@ -218,7 +234,7 @@
 }
 
 .second-section {
-    background: #f3f4f5;
+    background: var(--white-color);
     height: 100vh;
 }
 
