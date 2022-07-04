@@ -21,8 +21,8 @@
 
 :root {
     /*Colors*/
-    --first-section-background-color: #2a1361;
-    --navbar-button-background-color: #055f8a;
+    --first-section-background-color: #352575;
+    --navbar-button-background-color: #42e8e0;
     --navbar-button-text-color: white;
 
     /* NavBar Dimensions */
@@ -39,6 +39,7 @@
 /* Header */
 .header-container {
     height: var(--navbar-height);
+    position: sticky;
     text-align: center;
     padding-top: 2rem;
 }
@@ -51,7 +52,7 @@
 
 .navbar-logo {
     display: inline-block;
-    height: 100%;
+    height: 50px;
     width: 50px;
     position: absolute;
     left: 8rem;
@@ -66,7 +67,7 @@
     font-size: 15px;
     background: none;
     height: 20px;
-    padding: 0 10px;
+    padding: 0 10px 24px;
     margin: 0.75rem 1rem;
 }
 
@@ -76,16 +77,27 @@
     cursor: pointer;
 }
 
+.navbar-button.active .navbar-button-link {
+    color: var(--first-section-background-color);
+}
+
 .navbar-button:hover {
     background-color: var(--navbar-button-background-color);
     border-radius: 15px;
     cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 200ms;
 }
 
 .navbar-button a:any-link {
     font-family: 'Hermit-Regular';
+    font-size: 18px;
     color: rgb(255, 255, 255);
     text-decoration: none;
+}
+
+.navbar-button a:hover {
+    color: var(--first-section-background-color);
 }
 
 /* Main Content */
@@ -96,11 +108,30 @@
 
 
 /* Title Content */
-.title-container {
+.text-container .title-container {
     position: absolute;
     top: 10rem;
     left: 7rem;
     z-index: 4;
+}
+
+.text-container .text-presentation {
+    position: absolute;
+    top: 18rem;
+    left: 7rem;
+    visibility: hidden;
+    animation: appear 500ms ease-in-out forwards;
+    animation-delay: 2s;
+}
+
+.text {
+    color: #f3f4f5;
+    font-family: 'Hermit-Regular';
+    font-size: 2vw;
+}
+
+.text-container .text-presentation h2:last-child {
+    background: linear-gradient(to right, #7300c0, #53008a);
 }
 
 .title {
@@ -130,12 +161,14 @@
     width: 100%;
     height: 100%;
     z-index: 1;
+    animation: float 600ms ease-in-out alternate infinite;
+    animation-delay: 2s;
 }
 
-.background-elements .computer-container .float:hover {
+/* .background-elements .computer-container .float:hover {
     position: absolute;
     animation: float 600ms ease-in-out alternate infinite;
-}
+} */
 
 .background-elements .computer-container .avatar-1 {
     position: absolute;
@@ -156,6 +189,8 @@
 
 /* Lines Container */
 .lines-container {
+    width: 100%;
+    height: 100%;
     z-index: 0;
 }
 
@@ -172,7 +207,7 @@
 }
 
 .background-elements .lines-container .line-bright.bright {
-    animation: opening 10s;
+    animation: opening 10s, fade-in-opacity 2s;
 }
 
 /* Second Section */
@@ -183,7 +218,7 @@
 }
 
 .second-section {
-    background-color: #525252;
+    background: #f3f4f5;
     height: 100vh;
 }
 
@@ -225,16 +260,35 @@
 }
 
 @keyframes opening {
-    0% {
+    from {
         clip-path: circle(0%);
     }
 
-    99% {
+    to {
         clip-path: circle(150%);
+    }
+}
+
+@keyframes appear {
+    0% {
+        visibility: visible;
+        opacity: 0%;
+        top: 10rem;
+    }
+
+    50% {
+        visibility: visible;
+        top: 20rem;
+    }
+
+    75% {
+        visibility: visible;
+        top: 16rem;
     }
 
     100% {
-        clip-path: none;
+        visibility: visible;
+        opacity: 100%;
+        top: 18rem;
     }
-
 }
