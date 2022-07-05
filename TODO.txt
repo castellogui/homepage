@@ -1,0 +1,5 @@
+1 - Adjust texto to get better responsivity on zoom out and zoom in. 
+2 - Check names and adjust project structre on HTML and CSS
+3 - Adjust lines sizes to fit one time at all.
+4 - Adjust logo shadow to get get better at white navbar.
+5 - Ajust color in body, on buttons, navbar.
