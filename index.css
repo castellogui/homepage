@@ -116,6 +116,12 @@ body {
     box-shadow: -2px 8px 19px -3px rgba(0, 0, 0, 0.6);
 }
 
+.navbar-container.sticky ul li.active a {
+    color: var(--white-color);
+    background-color: var(--first-section-background-color);
+    border-radius: 10px;
+}
+
 .navbar-container.sticky ul li a {
     color: var(--first-section-background-color);
 }
@@ -148,6 +154,15 @@ body {
     animation-delay: 2s;
     top: 170px;
     left: 10px;
+}
+
+.line-static {
+    position: relative;
+    display: inline-block;
+    width: 12vw;
+    height: 0.9vh;
+    background: var(--navbar-button-background-color);
+    margin-bottom: 2rem;
 }
 
 .title {
@@ -212,14 +227,7 @@ body {
     font-size: 1.3vw;
 }
 
-.line-static {
-    position: relative;
-    display: inline-block;
-    width: 35%;
-    height: 0.5em;
-    background: var(--navbar-button-background-color);
-    margin-bottom: 2rem;
-}
+
 
 
 
