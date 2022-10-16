@@ -28,3 +28,15 @@ a {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Hermit';
+  src: url('../assets/fonts/Hermit-Regular.otf');
+}
+
+.selected{
+  color: #44f5e7;
+  background-color: #44f5e65b;
+  border-radius: 0.5rem;
+  padding: 0.25rem 1rem;
+}
