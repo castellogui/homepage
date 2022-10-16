@@ -6,7 +6,15 @@ const Home: NextPage = () => {
   return (
     <div>
       <section className='bg-[#352575] w-full h-screen'>
-        <Navbar logo={logo}></Navbar>
+        <Navbar logo={logo}>
+          <span>Home</span>
+          <span>Sobre</span>
+          <span>Serviços</span>
+          <span>Portifólio</span>
+          <span>Contato</span>
+        </Navbar>
+        <div style={{ height: 'calc(100% - 56px)' }}>
+        </div>
       </section>
     </div>
   )
