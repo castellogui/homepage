@@ -1,12 +1,12 @@
-import computer from '../assets/svg/computer.svg'
-import computerFloor from '../assets/svg/computer-floor.svg'
+import computer from '../assets/svg/responsive/computer.svg'
+import computerFloor from '../assets/svg/responsive/computer-floor.svg'
 
 
 export default function Computer() {
     return (
-        <div className=''>
-            <img src={computer.src} alt="computer" className='absolute z-10 right-8 bottom-20' />
-            <img src={computerFloor.src} alt="computerFloor" className='absolute z-0 right-8 bottom-20 opacity-50' />
-        </div>
+        <>
+            <img id='computer' src={computer.src} alt="computer" className='absolute z-40 bottom-0' />
+            <img id='floor' src={computerFloor.src} alt="computerFloor" className='absolute z-30 bottom-0 opacity-40' />
+        </>
     )
 }
