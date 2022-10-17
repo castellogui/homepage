@@ -34,7 +34,7 @@ export default function Navbar(props: NavbarProps) {
 
     return (
         <div className="w-full h-14 relative flex flex-row justify-center items-center">
-            <img title="logo" alt="logo" src={props.logo.src} className="h-full absolute left-0"></img>
+            <img title="logo" alt="logo" src={props.logo.src} className="h-full absolute left-8"></img>
             <ul>
                 {renderElements(props.children)}
             </ul>
