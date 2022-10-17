@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Navbar from '../components/Navbar'
 import logo from '../assets/logo.png'
+import wave from '../assets/svg/wave.svg'
 
 const Home: NextPage = () => {
   return (
@@ -13,8 +14,7 @@ const Home: NextPage = () => {
           <span>Portifólio</span>
           <span>Contato</span>
         </Navbar>
-        <div style={{ height: 'calc(100% - 56px)' }}>
-        </div>
+        <div style={{ height: 'calc(100% - 56px)' }}></div>
       </section>
     </div>
   )
