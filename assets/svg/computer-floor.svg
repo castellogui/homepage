@@ -1,0 +1,20 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 712 626" width="712" height="626">
+	<title>pczinhogui-ai</title>
+	<style>
+		.s0 { fill: #0f054c } 
+		.s1 { fill: #080344 } 
+	</style>
+	<g id="gui">
+		<g id="&lt;Group&gt;">
+			<g id="&lt;Group&gt;" style="opacity: .7">
+				<path id="&lt;Path&gt;" class="s0" d="m356.7 590.6l-337.6-194.9 337.6-194.9 337.6 194.9z"/>
+			</g>
+			<g id="&lt;Group&gt;" style="opacity: .7">
+				<path id="&lt;Path&gt;" class="s0" d="m356.7 560.4l-285.3-164.7 285.3-164.7 285.2 164.7z"/>
+			</g>
+			<g id="&lt;Group&gt;" style="opacity: .9">
+				<path id="&lt;Path&gt;" class="s1" d="m356.7 525.3l-224.4-129.6 224.4-129.5 224.4 129.5z"/>
+			</g>
+		</g>
+	</g>
+</svg>
