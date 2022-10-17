@@ -25,7 +25,8 @@ export default function Navbar(props: NavbarProps) {
         return elementsArray.map((element: any, index) => {
             const elementName = normalizeElement(element.props.children)
             return <li key={index} id={elementName}
-                onClick={() => handleActiveButton(elementName)} className={`${activeButton == elementName ? 'selected' : ''} inline-block mx-5 text-sm font-[Hermit] hover:bg-[#44f5e65b] px-4 py-1 rounded-lg`}>
+                onClick={() => handleActiveButton(elementName)}
+                className={`${activeButton == elementName ? 'selected' : ''} inline-block mx-5 text-sm font-[Hermit] hover:bg-[#44f5e65b] px-4 py-1 rounded-lg`}>
                 <a href={`#${elementName}`}>{element}</a>
             </li>
         })
