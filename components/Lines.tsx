@@ -1,11 +1,11 @@
-import lineBright from '../assets/svg/lines-bright.svg'
-import linesClean from '../assets/svg/lines-clean.svg'
+import lineBright from '../assets/svg/responsive/lines-bright.svg'
+import linesClean from '../assets/svg/responsive/lines-clean.svg'
 
 export default function Lines() {
     return (
-        <div className='opacity-40'>
-            <img src={lineBright.src} alt="lineBright" className='absolute right-0 bottom-0' />
-            <img src={linesClean.src} alt="lineClean" className='absolute right-8 bottom-0' />
-        </div>
+        <>
+            <img src={lineBright.src} alt="lineBright" className='absolute z-20 bottom-0 opacity-40' />
+            <img src={linesClean.src} alt="lineClean" className='absolute z-10 bottom-0 opacity-40'/>
+        </>
     )
 }
