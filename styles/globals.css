@@ -25,10 +25,6 @@ a {
   }
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @font-face {
   font-family: 'Hermit';
   src: url('../assets/fonts/Hermit-Regular.otf');
