@@ -4,6 +4,7 @@ import logo from '../assets/logomarca-branco.png'
 import wave from '../assets/svg/wave.svg'
 import Lines from '../components/Lines'
 import Computer from '../components/Computer'
+import AutoWrite from '../components/AutoWrite'
 
 const Home: NextPage = () => {
   console.log(wave);
@@ -19,6 +20,9 @@ const Home: NextPage = () => {
           <span>Contato</span>
         </Navbar>
         <div style={{ height: 'calc(100% - 56px)' }} className="relative">
+          <div className='inline-block ml-16 mt-32'>
+            <AutoWrite></AutoWrite>
+          </div>
           <Computer></Computer>
           <Lines></Lines>
           <img src={wave.src} alt="wave" className='absolute bottom-0' />
