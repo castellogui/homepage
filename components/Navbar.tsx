@@ -1,9 +1,10 @@
 import { StaticImageData } from "next/image"
-import { Children, useState } from "react"
+import { Children } from "react"
 
 
 interface NavbarProps {
     logo: StaticImageData,
+    logoTitle?: string,
     children: any
 }
 
@@ -12,30 +13,29 @@ function normalizeElement(elementString: any) {
 }
 
 export default function Navbar(props: NavbarProps) {
-    const [activeButton, setActiveButton] = useState('')
-
-    function handleActiveButton(buttonName: string) {
-        setActiveButton(buttonName)
-    }
-
     function renderElements(elements: any) {
         let elementsArray = Children.toArray(elements)
         return elementsArray.map((element: any, index) => {
             const elementName = normalizeElement(element.props.children)
             return <li key={index} id={elementName}
-                onClick={() => handleActiveButton(elementName)}
-                className={`${activeButton == elementName ? 'selected' : ''} inline-block mx-5 text-sm font-[Hermit] hover:bg-[#44f5e65b] px-4 py-1 rounded-lg`}>
-                <a href={`#${elementName}`}>{element}</a>
+                className="h-full px-5 text-sm list-none font-[Hermit] cursor-pointer hover:border-t-2 border-t-white transition-all duration-100">
+                <a className="h-full flex flex-row items-center" href={`#${elementName}`}>{element}</a>
             </li>
         })
     }
 
     return (
-        <div id="navbar" className="w-full h-14 relative flex flex-row justify-center items-center">
-            <img title="logo" alt="logo" src={props.logo.src} className="h-full absolute left-8"></img>
-            <ul>
+        <div id="navbar" className="w-full h-14 flex items-center px-6 shadow-lg relative z-50">
+            <div className="flex items-center">
+                <div className="w-10 h-10">
+                    <img title="logo" alt="logo" src={props.logo.src} className="h-full w-full left-8"></img>
+                </div>
+                <h2 className="text-sm ml-2 text-white font-[Hermit]">{props.logoTitle}</h2>
+            </div>
+            <div className="h-full flex flex-[2] items-center justify-center">
                 {renderElements(props.children)}
-            </ul>
+            </div>
+            
         </div>
     )
 };
