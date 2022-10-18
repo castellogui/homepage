@@ -28,10 +28,10 @@ const Home: NextPage = () => {
         <MobileNavbar logo={logo}></MobileNavbar>
         <div style={{ height: 'calc(100% - 56px)' }} className="relative">
           <div className='inline-block mt-16 ml-16 md:ml-32 md:mt-32 relative z-10 w-[80%]'>
-            <AutoWrite className='border-b-4 border-[#3fd1d3] mb-0' typeSpeed={30} showCursor={false} loop={false} color='white' text={['Guilherme Castello']}></AutoWrite>
+            <AutoWrite className='border-b-4 border-[#3fd1d3] mb-0 text-white' typeSpeed={30} showCursor={false} loop={false} text={['Guilherme Castello']}></AutoWrite>
             <br></br>
             <br></br>
-            <span className='text-3xl md:text-5xl font-[HermitBold]'>Sou </span><AutoWrite typeSpeed={40} showCursor={true} loop={true} color='#3fd1d3' text={['desenvolvedor!', 'apaixonado por tecnologia!', 'gamer!']}></AutoWrite>
+            <span className='text-3xl md:text-5xl font-[HermitBold]'>Sou </span><AutoWrite typeSpeed={40} showCursor={true} loop={true} className='text-[#3fd1d3]' text={['desenvolvedor!', 'apaixonado por tecnologia!', 'gamer!']}></AutoWrite>
             <br></br>
             <br></br>
           </div>
