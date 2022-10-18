@@ -28,7 +28,7 @@ export default function MobileNavbar(props: MobileNavbarProps) {
     return (
         <div id="mobile-navbar" className="w-full h-14 flex items-center px-6 ">
             <div className="flex items-center">
-                <div className="w-10 h-10">
+                <div className="w-full h-16">
                     <img title="logo" alt="logo" src={props.logo.src} className="h-full w-full left-8"></img>
                 </div>
                 <h2 className="text-sm ml-2 text-white font-[Hermit]">{props.logoTitle}</h2>
