@@ -1,18 +1,23 @@
-import { useEffect, useRef } from "react";
-import Typed from "typed.js";
 
-export default function AutoWrite() {
-    const el: any = useRef(null);
+import Typed from 'react-typed';
 
-    useEffect(() => {
-        const typed = new Typed(el.current, {
-            strings: ['Guilherme Castello'],
-            startDelay: 300,
-            typeSpeed: 40,
-            cursorChar: '_',
-        });
-    }, []);
+interface AutoWriteProps {
+    text: Array<string>,
+    color: string,
+    loop: boolean,
+    showCursor: boolean,
+    className?: string,
+    typeSpeed:number
+}
 
-
-    return (<span ref={el} className="font-[HermitBold] text-5xl"></span>)
+export default function AutoWrite(props: AutoWriteProps) {
+    return (
+        <Typed
+            strings={props.text}
+            typeSpeed={props.typeSpeed}
+            loop={props.loop}
+            className={`text-3xl md:text-5xl font-[HermitBold] text-[${props.color}] ${props.className}`}
+            showCursor={props.showCursor}
+        />
+    )
 }
