@@ -39,6 +39,10 @@ a {
     animation: float 600ms ease-in-out alternate infinite;
 }
 
+#terminal{
+    animation: pulse 1500ms ease-in-out alternate infinite;
+}
+
 /* #floor{
   animation: openFloor 600ms ease-in-out alternate infinite;
 }
@@ -59,6 +63,15 @@ a {
     }
     to{
         bottom: 1rem
+    }
+}
+
+@keyframes pulse {
+    from{
+        transform: scale(1.0);
+    }
+    to{
+        transform: scale(1.01);
     }
 }
 
