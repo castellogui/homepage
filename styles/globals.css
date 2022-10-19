@@ -39,7 +39,7 @@ a {
     animation: float 600ms ease-in-out alternate infinite;
 }
 
-#terminal{
+#terminal-float-container{
     animation: pulse 1500ms ease-in-out alternate infinite;
 }
 
