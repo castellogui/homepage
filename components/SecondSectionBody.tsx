@@ -1,4 +1,4 @@
-import wave from '../assets/svg/waveSecondSection2.svg'
+import wave from '../assets/svg/waveSecondSection.svg'
 
 export default function SecondSectionBody() {
     return (
