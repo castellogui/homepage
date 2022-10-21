@@ -17,7 +17,7 @@ export default function Navbar(props: NavbarProps) {
         let elementsArray = Children.toArray(elements)
         return elementsArray.map((element: any, index) => {
             const elementName = normalizeElement(element.props.children)
-            return <li key={index} id={elementName}
+            return <li key={index}
                 className="h-full px-5 text-sm list-none font-[Hermit] cursor-pointer border-t-2 border-transparent hover:border-white transition-all duration-200 ">
                 <a className="h-full flex flex-row items-center" href={`#${elementName}`}>{element}</a>
             </li>
