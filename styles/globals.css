@@ -94,3 +94,8 @@ a {
 .upIconContainer:hover > .up-icon{
     right: 4rem;
 }
+
+#portfolio{
+  background-image: url('../assets/images/thirdSectionBackground.png');
+  background-size: cover;
+}

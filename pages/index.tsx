@@ -27,12 +27,13 @@ const Home: NextPage = () => {
           </MobileNavbar>
           <FirstSectionBody></FirstSectionBody>
         </section>
-        <section id="sobre" className='bg-[#F3F4F5] w-full h-screen relative'>
+        <section id="sobre" className='bg-[#F3F4F5] w-full h-max md:h-max relative'>
           <SecondSectionBody></SecondSectionBody>
         </section>
-        <section id="portfolio" className='bg-[#352575] w-full h-screen relative'>
+        <section id="portfolio" className='bg-[#352575] w-full h-max md:h-screen relative'>
           <ThirdSectionBody></ThirdSectionBody>
         </section>
+        <section id="skills" className='bg-[#352575] w-full h-max'></section>
       </div>
     </>
   )
