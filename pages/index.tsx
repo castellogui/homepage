@@ -16,7 +16,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Guilherme Castello 💻</title>
+        <title>Guilherme Castello</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <FloatingIcon></FloatingIcon>
