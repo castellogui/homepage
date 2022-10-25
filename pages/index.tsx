@@ -8,6 +8,7 @@ import Script from 'next/script'
 import SecondSectionBody from '../components/SecondSectionBody'
 import FloatingIcon from '../components/FloatingIcon'
 import ThirdSectionBody from '../components/ThirdSectionBody'
+import FourthSectionBody from '../components/FourthSectionBody'
 
 
 const Home: NextPage = () => {
@@ -32,6 +33,9 @@ const Home: NextPage = () => {
         </section>
         <section id="skills" className='bg-[#352575] w-full h-max relative pb-10'>
           <ThirdSectionBody></ThirdSectionBody>
+        </section>
+        <section id="contato" className='bg-[#352575] w-full h-max relative pb-10'>
+          <FourthSectionBody></FourthSectionBody>
         </section>
       </div>
     </>
