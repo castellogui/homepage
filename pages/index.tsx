@@ -9,11 +9,16 @@ import SecondSectionBody from '../components/SecondSectionBody'
 import FloatingIcon from '../components/FloatingIcon'
 import ThirdSectionBody from '../components/ThirdSectionBody'
 import FourthSectionBody from '../components/FourthSectionBody'
+import Head from 'next/head'
 
 
 const Home: NextPage = () => {
   return (
     <>
+      <Head>
+        <title>Guilherme Castello Dev</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <FloatingIcon></FloatingIcon>
       <div>
         <Script src='https://kit.fontawesome.com/796432032e.js'></Script>
