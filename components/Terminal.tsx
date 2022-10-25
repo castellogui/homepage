@@ -1,14 +1,14 @@
 import AutoWrite from "./AutoWrite";
 import terminal from '../assets/svg/responsive/terminal.svg'
 import { useEffect, useState } from "react";
-import reactIcon from '../assets/icons/react-icon.png'
-import nodeIcon from '../assets/icons/nodejs-icon.png'
-import tailwindIcon from '../assets/icons/tailwindcss-icon.png'
-import postgresIcon from '../assets/icons/postgres-icon.png'
-import javaIcon from '../assets/icons/java-icon.png'
-import mongoDbIcon from '../assets/icons/mongodb-icon.png'
-import nextjsIcon from '../assets/icons/nextjs-icon.png'
-import oracleIcon from '../assets/icons/oracle-icon.png'
+import reactIcon from '../assets/icons/react-icon-p.png'
+import nodeIcon from '../assets/icons/nodejs-icon-p.png'
+import tailwindIcon from '../assets/icons/tailwindcss-icon-p.png'
+import postgresIcon from '../assets/icons/postgres-icon-p.png'
+import javaIcon from '../assets/icons/java-icon-p.png'
+import mongoDbIcon from '../assets/icons/mongodb-icon-p.png'
+import nextjsIcon from '../assets/icons/nextjs-icon-p.png'
+import oracleIcon from '../assets/icons/oracle-icon-p.png'
 
 
 export default function Terminal() {
@@ -23,7 +23,7 @@ export default function Terminal() {
         if (delayed) {
             return (
                 <>
-                    <AutoWrite loop={false} showCursor={false} typeSpeed={15} text={[">Ah, e essas são algumas tecnologias que utilizo:"]} style={{ fontSize: '100%' }}></AutoWrite>
+                    <AutoWrite loop={false} showCursor={false} typeSpeed={15} text={["> Nos meus últimos projetos, pude trabalhar com algumas das tecnologias abaixo, e hoje as aplico no meu dia a dia!"]} style={{ fontSize: '100%' }}></AutoWrite>
                     <br></br>
                 </>
             )
