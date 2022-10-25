@@ -16,7 +16,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Guilherme Castello Dev</title>
+        <title>Guilherme Castello 💻</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <FloatingIcon></FloatingIcon>
@@ -27,7 +27,7 @@ const Home: NextPage = () => {
             <span>Home</span>
             <span>Sobre</span>
             <span>Skills</span>
-            <span>Contato</span>
+            {/* <span>Contato</span> */}
           </Navbar>
           <MobileNavbar logo={logoMobile}>
           </MobileNavbar>
@@ -39,9 +39,9 @@ const Home: NextPage = () => {
         <section id="skills" className='bg-[#352575] w-full h-max relative pb-10'>
           <ThirdSectionBody></ThirdSectionBody>
         </section>
-        <section id="contato" className='bg-[#352575] w-full h-max relative pb-10'>
+        {/*<section id="contato" className='bg-[#352575] w-full h-max relative pb-10'>
           <FourthSectionBody></FourthSectionBody>
-        </section>
+        </section> */}
       </div>
     </>
   )
