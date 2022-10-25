@@ -23,7 +23,7 @@ export default function Terminal() {
         if (delayed) {
             return (
                 <>
-                    <AutoWrite loop={false} showCursor={false} typeSpeed={15} text={["> Sou desenvolvedor front-end, e aqui você pode encontrar alguns dos meus trabalhos! Ah, e essas são algumas tecnologias que utilizo:"]} style={{ fontSize: '100%' }}></AutoWrite>
+                    <AutoWrite loop={false} showCursor={false} typeSpeed={15} text={[">Ah, e essas são algumas tecnologias que utilizo:"]} style={{ fontSize: '100%' }}></AutoWrite>
                     <br></br>
                 </>
             )
@@ -33,9 +33,9 @@ export default function Terminal() {
     }
 
     return (
-        <div id="terminal-float-container" className='relative w-[90%] m-auto h-[calc(100vh_/_2)] md:ml-32 md:w-[50%] z-10'>
-            <div id="terminal-container" className='absolute transition-all w-0 h-full duration-300 delay-700'>
-                <div className="w-full h-full bg-[#282a36] rounded-xl overflow-hidden">
+        <div id="terminal-float-container" className='relative w-[90%] m-auto md:w-[50%] z-10 '>
+            <div id="terminal-container" className='transition-all w-0 h-auto duration-300 delay-700 '>
+                <div className="w-full h-full bg-[#282a36] rounded-xl">
                     <div className="w-full h-6 flex flex-row mt-1">
                         <div className="w-[15%] h-full flex flex-row">
                             <div className="ml-2 mt-2 w-3 h-3 bg-[#ee695f] rounded-full"></div>
@@ -49,15 +49,31 @@ export default function Terminal() {
                     <div className="px-4 mt-3 h-[15%]">
                         {RenderAutoWrite(delayed)}
                     </div>
-                    <div className="grid grid-cols-4 p-10 gap-3">
-                        <img src={reactIcon.src} className="w-32 h-32" />
-                        <img src={nextjsIcon.src} className="w-32 h-32" />
-                        <img src={tailwindIcon.src} className="w-32 h-32" />
-                        <img src={nodeIcon.src} className="w-32 h-32" />
-                        <img src={javaIcon.src} className="w-32 h-32" />
-                        <img src={postgresIcon.src} className="w-32 h-32" />
-                        <img src={oracleIcon.src} className="w-32 h-32" />
-                        <img src={mongoDbIcon.src} className="w-32 h-32" />
+                    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 p-10">
+                        <div className="flex justify-center text-6xl p-6">
+                            <img src={reactIcon.src} className="w-full h-full" />  
+                        </div>
+                        <div className="flex justify-center text-6xl p-6">
+                            <img src={nextjsIcon.src} className="w-full h-full" />
+                        </div>
+                        <div className="flex justify-center text-6xl p-6">
+                            <img src={tailwindIcon.src} className="w-full h-full" />
+                        </div>
+                        <div className="flex justify-center text-6xl p-6">
+                            <img src={nodeIcon.src} className="w-full h-full" />
+                        </div>
+                        <div className="flex justify-center text-6xl p-6">
+                            <img src={javaIcon.src} className="w-full h-full" />
+                        </div>
+                        <div className="flex justify-center text-6xl p-6">
+                            <img src={postgresIcon.src} className="w-full h-full" />
+                        </div>
+                        <div className="flex justify-center text-6xl p-6">
+                            <img src={oracleIcon.src} className="w-full h-full" />
+                        </div>
+                        <div className="flex justify-center text-6xl p-6">
+                            <img src={mongoDbIcon.src} className="w-full h-full" />
+                        </div>
                     </div>
                 </div>
             </div>

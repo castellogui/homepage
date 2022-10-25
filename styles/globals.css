@@ -23,6 +23,7 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
@@ -35,16 +36,16 @@ a {
 }
 
 @font-face {
-    font-family: HermitBold;
-    src: url('../assets/fonts/Hermit-Bold.otf');
+  font-family: HermitBold;
+  src: url('../assets/fonts/Hermit-Bold.otf');
 }
 
-#computer{
-    animation: float 600ms ease-in-out alternate infinite;
+#computer {
+  animation: float 600ms ease-in-out alternate infinite;
 }
 
-#terminal-float-container{
-    animation: pulse 1500ms ease-in-out alternate infinite;
+#terminal-float-container {
+  animation: pulse 1500ms ease-in-out alternate infinite;
 }
 
 /* #floor{
@@ -62,40 +63,44 @@ a {
 } */
 
 @keyframes float {
-    from{
-        bottom: 0rem;
-    }
-    to{
-        bottom: 1rem
-    }
+  from {
+    bottom: 0rem;
+  }
+
+  to {
+    bottom: 1rem
+  }
 }
 
 @keyframes pulse {
-    from{
-        transform: scale(1.0);
-    }
-    to{
-        transform: scale(1.01);
-    }
+  from {
+    transform: scale(1.0);
+  }
+
+  to {
+    transform: scale(1.01);
+  }
 }
 
 @media only screen and (max-width: 840px) {
-  #navbar{
-    display:none
+  #navbar {
+    display: none
   }
 }
 
 @media only screen and (min-width: 840px) {
-  #mobile-navbar{
-    display:none
+  #mobile-navbar {
+    display: none
   }
 }
 
-.upIconContainer:hover > .up-icon{
-    right: 4rem;
+.upIconContainer:hover>.up-icon {
+  right: 4rem;
 }
 
-#portfolio{
+
+
+/* #skills {
   background-image: url('../assets/images/thirdSectionBackground.png');
   background-size: cover;
-}
+} */

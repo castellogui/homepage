@@ -13,7 +13,7 @@ export default function SecondSectionBody() {
                 tentei entender como funcionam, e assim dei o ponta pé para o mundo da programação.</span>
             </div>
             <div className="flex flex-row w-full h-max mt-16">
-                <span className="text-[#352575] font-[Hermit] md:leading-6 text-justify ml-10 text-xs md:text-base">Minha primeira oportunidade no mercado de programação foi em 2021, numa pequena empresa do interior de SP chamada Support Informatica,
+                <span className="text-[#352575] font-[Hermit] md:leading-8 text-justify ml-10 text-xs md:text-base">Minha primeira oportunidade no mercado de programação foi em 2021, numa pequena empresa do interior de SP chamada Support Informatica,
                     onde pude aprender minhas bases de back-end e front-end. Trabalhando na manutenção de um ERP, utilizei Java com SpringBoot, Hibernate e VueJS.</span>
                 <div className="flex flex-row items-center">
                     <i className="fa-solid fa-1 text-3xl py-5 px-7 mx-8 bg-[#352575] rounded-full"></i>
@@ -23,7 +23,7 @@ export default function SecondSectionBody() {
                 <div className="flex flex-row items-center">
                     <i className="fa-solid fa-2 text-3xl py-5 px-6 mx-8 bg-[#352575] rounded-full"></i>
                 </div>
-                <span className="text-[#352575] font-[Hermit] md:leading-6 text-justify mr-10 text-xs md:text-base">Atualmente trabalho como desenvolvedor fullstack em um time global. Na U-Shin, desenvolvo aplicações para automação de processos, facilitação de rotinas e input de dados. Em sua maioria, os projetos são realizados em
+                <span className="text-[#352575] font-[Hermit] md:leading-8 text-justify mr-10 text-xs md:text-base">Atualmente trabalho como desenvolvedor fullstack em um time global. Na U-Shin, desenvolvo aplicações para automação de processos, facilitação de rotinas e input de dados. Em sua maioria, os projetos são realizados em
                 ReactJS e Typescript, utilizando NodeJS como linguagem server-side.</span>
             </div>
         </div>

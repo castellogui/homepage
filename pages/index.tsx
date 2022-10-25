@@ -20,7 +20,7 @@ const Home: NextPage = () => {
           <Navbar logo={logo}>
             <span>Home</span>
             <span>Sobre</span>
-            <span>Portfólio</span>
+            <span>Skills</span>
             <span>Contato</span>
           </Navbar>
           <MobileNavbar logo={logoMobile}>
@@ -30,10 +30,9 @@ const Home: NextPage = () => {
         <section id="sobre" className='bg-[#F3F4F5] w-full h-max md:h-max relative'>
           <SecondSectionBody></SecondSectionBody>
         </section>
-        <section id="portfolio" className='bg-[#352575] w-full h-max md:h-screen relative'>
+        <section id="skills" className='bg-[#352575] w-full h-max relative pb-10'>
           <ThirdSectionBody></ThirdSectionBody>
         </section>
-        <section id="skills" className='bg-[#352575] w-full h-max'></section>
       </div>
     </>
   )

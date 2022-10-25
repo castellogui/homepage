@@ -1,5 +1,3 @@
-import Carousel from 'react-elastic-carousel';
-
 export default function Carousel() {
 
     return (
