@@ -48,20 +48,6 @@ a {
   animation: pulse 1500ms ease-in-out alternate infinite;
 }
 
-/* #floor{
-  animation: openFloor 600ms ease-in-out alternate infinite;
-}
-
-@keyframes openFloor {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(0.99);
-  }
-} */
-
 @keyframes float {
   from {
     bottom: 0rem;
@@ -97,10 +83,3 @@ a {
 .upIconContainer:hover>.up-icon {
   right: 4rem;
 }
-
-
-
-/* #skills {
-  background-image: url('../assets/images/thirdSectionBackground.png');
-  background-size: cover;
-} */
