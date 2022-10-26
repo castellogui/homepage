@@ -1,5 +1,5 @@
 
-export default function SobreSection() {
+export default function Sobre() {
     return (
         <div className="w-full h-full">
             <div className="flex flex-row w-full h-max ">
