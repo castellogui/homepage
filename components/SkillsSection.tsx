@@ -2,8 +2,7 @@ import wave from '../assets/svg/waveSecondSection.svg'
 import background from '../assets/images/thirdSectionBackground.png'
 import Terminal from './Terminal'
 
-
-export default function ThirdSectionBody() {
+export default function SkillsSection() {
     return (
         <>
             <img src={wave.src} alt="wave" />

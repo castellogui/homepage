@@ -3,7 +3,7 @@ import wave from '../assets/svg/wave.svg'
 import AutoWrite from "./AutoWrite";
 
 
-export default function FirstSectionBody() {
+export default function HomeSection() {
     return (
         <div style={{ height: 'calc(100% - 56px)' }} className="relative">
             <div className="text-center pt-48 md:text-left md:p-0 md:absolute md:top-[30%] md:left-14 z-10 md:w-[55%]">

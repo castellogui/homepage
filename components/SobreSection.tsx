@@ -1,5 +1,5 @@
 
-export default function SecondSectionBody() {
+export default function SobreSection() {
     return (
         <div className="w-full h-full">
             <div className="flex flex-row w-full h-max ">
